@@ -1,0 +1,139 @@
+//colors
+$primary: #393e92;
+$warning: #feb600;
+$success: #5ad46e;
+$dark: #323332;
+$body-bg: #f0f2f6;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap";
+
+body {
+    background-color: $body-bg;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-btn {
+    margin-top: -2px;
+    &:active {
+        border: none;
+    }
+    &:focus {
+        border: none;
+    }
+}
+.title {
+    font-size: 60px;
+}
+.nav-link {
+    &:focus {
+        color: $primary;
+    }
+    &:hover {
+        color: $primary;
+    }
+}
+.img-circle {
+    width: auto;
+    height: 3rem;
+    opacity: 90%;
+}
+/* Benefits */
+.benefit {
+    padding: 1rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    height: 25rem;
+    margin-bottom: 2rem;
+    transition: .4s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.090), -2px -2px 10px rgba(0, 0, 0, 0.090);
+    }
+}
+.benefit .card-img {
+    width: 100%;
+    margin: 0 auto;
+}
+.benefit .card-img img{
+    height: auto;
+    max-height: 12rem;
+}
+/* Join US */
+.img-join-us{
+    filter: drop-shadow( 20px 80px 20px rgba(0, 0, 0, 0.129));
+}
+.floating { 
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+/* Testimonial */
+.testimonial {
+    padding: 0 8rem;
+    border: none;
+}
+.quote {
+    height: 5rem;
+    width: auto;
+    background-image: url("/assets/img/left-quote.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 10%;
+}
+/* Contact */
+.contact-link {
+    color: $primary;
+    transition: .3s ease-in;
+    &:hover {
+        color: $dark;
+    }
+}
+@include media-breakpoint-only(xs) {
+    .img-hero {
+        margin-top: 20px;
+        width: 250px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .img-circle {
+        height: 2rem;
+    }
+    .img-join-us{
+        filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, 0.129));
+    }
+    .benefit .card-img img{
+        height: auto;
+        max-height: 10rem;
+    }
+    .testimonial {
+        padding: 0;
+    }
+}
+@include media-breakpoint-only(sm) {
+    .title{
+        font-size: 40px;
+    }
+    .testimonial {
+        padding: 0;
+    }
+}
+@include media-breakpoint-only(md) {
+    .title{
+        font-size: 40px;
+    }
+    .img-join-us{
+        filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, 0.129));
+    }
+    .testimonial {
+        padding: 1;
+    }
+}
