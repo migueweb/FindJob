@@ -12,7 +12,7 @@ Landing page with bootstrap and AOS
 - AOS
 
 ## site live 🚀
-[migueweb.github.io/](#) 
+[migueweb.github.io/FindJob](https://migueweb.github.io/FindJob) 
 
 ## preview 
 ![Screenshot](./assets/img/screenshot.png)
