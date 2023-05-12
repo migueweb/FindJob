@@ -35,8 +35,8 @@ Beautiful and modern responsive landing page build with bootstrap and AOS.
 ## Deveploment
 
 ```bash
-git clone https://migueweb/Findjob
-cd Findjob
+git clone https://github.com/migueweb/FindJob
+cd FindJob
 npm install
 npm run dev
 ```
