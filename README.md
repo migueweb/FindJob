@@ -5,7 +5,7 @@
     </a>
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/migueweb/Findjob">
     <a href="https://github.com/migueweb/FindJob/blob/main/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/migueweb/Findjob">
+        <img alt="License" src="https://img.shields.io/github/license/migueweb/FindJob">
     </a>
 </p>
 
